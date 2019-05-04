@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-var url = 'https://api.darksky.net/forecast/';
+var url = 'https://crossorigin.me/https://api.darksky.net/forecast/';
 var key = 'a5909895759c6a1551f92a4e6656f49e5';
 var coords = {
 	scl: '-33.4488897,-70.6692655',
