@@ -2,16 +2,54 @@
 <html>
 <head>
 
-<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<title>Consultar clima</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script scr="app.js"></script>
 </head>
 <body>
 
+<div class="container">
+	<h1 class="text-center">Consultando clima mediante AJAX</h1>
+	 <div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+				<select name="form-control" id="select">
+					<option value="">Seleccione una ubicación</option>
+					<option value="scl">Santiago, Región Metropolitana</option>
+					<option value="ccp">Concepción, Región del Bío-Bío</option>
+				</select>
+				<img src="https://png.pngtree.com/svg/20170711/11f5029e9c.svg" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-md-8">
+			<h2>Resumen</h2>
+			<table class="table table-striped">
+				<tr>
+					<td>Sensación térmica</td>
+					<td id="sensacion"></td>
+				</tr>
 
+				<tr>
+					<td>Probabilidad de lluvia</td>
+					<td id="probabilidad"></td>
+				</tr>
 
-<!-- Latest compiled and minified JavaScript -->
+				<tr>
+					<td>Humedad relativa</td>
+					<td id="humedad"></td>
+				</tr>
+			</table>
+
+		</div>
+	 </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
 
 </body>
 </html>
